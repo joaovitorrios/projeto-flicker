@@ -2,6 +2,7 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
+    margin-bottom: 5rem;
 }
 
 .messages-container h1 {
@@ -78,6 +79,14 @@
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+}
+
+/* Correção para o botão de notificações */
+.mobile-nav a[href="./notificaçoes.html"] {
+    position: relative;
+    z-index: 101;
+    pointer-events: auto;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
