@@ -70,33 +70,35 @@
 .nav-item, .new-post-btn, .settings-btn {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    color: rgba(255, 255, 255, 0.8);
+    gap: 12px;
+    padding: 12px;
+    color: var(--text-secondary);
     text-decoration: none;
-    border-radius: 1rem;
-    transition: all 0.3s;
+    border-radius: 8px;
+    transition: all 0.3s ease;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 600;
     width: 100%;
-    box-sizing: border-box;
-    margin: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .nav-item:hover, .new-post-btn:hover, .settings-btn:hover {
     background: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
+    color: var(--text-primary);
 }
 
-.nav-item.active {
-    color: #fc6008;
-    background: rgba(252, 96, 8, 0.1);
+.nav-item.active, .new-post-btn.active, .settings-btn.active {
+    color: var(--text-primary);
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.1);
 }
 
-.nav-item .icon, .new-post-btn .icon, .settings-btn .icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    flex-shrink: 0;
+.nav-item svg, .new-post-btn svg, .settings-btn svg {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
 }
 
 .settings-btn {
@@ -106,29 +108,6 @@
     right: 0;
     margin: 0 auto;
     width: 100%;
-    background: none;
-    border: none;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
-    border-radius: 1rem;
-    transition: all 0.3s;
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-.settings-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
-}
-
-.settings-btn .icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    flex-shrink: 0;
 }
 
 .main-content {
@@ -477,4 +456,15 @@
     .post-actions {
         padding: 0.75rem;
     }
+}
+
+.new-post-btn {
+    background: transparent;
+    color: var(--text-secondary);
+    margin: 1rem 0;
+}
+
+.new-post-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
 }
