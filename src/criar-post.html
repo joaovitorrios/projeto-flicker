@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criar Post - Flicker</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="https://i.ibb.co/sdSGPPYF/Design-sem-nome-1-removebg-preview.png">
     <link rel="stylesheet" href="./style/feed.css">
-    <link rel="stylesheet" href="./style/criar post.css">
+    <link rel="stylesheet" href="./style/criar-post.css">
 </head>
 <body class="feed-page">
     <header class="mobile-header">
@@ -77,9 +77,14 @@
         <div class="create-post-container">
             <div class="create-post-header">
                 <h1>Criar Post</h1>
-                <button class="publish-btn">Publicar</button>
+                <button class="publish-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 20h18v-2H3v2zM3 14h18v-2H3v2zM3 4v2h18V4H3z"/>
+                    </svg>
+                    Publicar
+                </button>
             </div>
-            <div class="create-post-content">
+            <div class="post-form">
                 <div class="user-info">
                     <img src="https://i.ibb.co/W4t0xxJX/IMG-4055.jpg" alt="User" class="user-avatar">
                     <div class="user-details">
@@ -93,41 +98,37 @@
                 </div>
                 <div class="post-editor">
                     <textarea placeholder="O que você está pensando?" class="post-text"></textarea>
-                    <div class="post-actions">
-                        <button class="action-btn">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                            </svg>
-                            <span>Adicionar Foto</span>
-                            <input type="file" accept="image/*" class="file-input">
-                        </button>
-                        <button class="action-btn">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
-                                <polyline points="14 2 14 8 20 8"></polyline>
-                                <line x1="16" y1="13" x2="8" y2="13"></line>
-                                <line x1="16" y1="17" x2="8" y2="17"></line>
-                                <line x1="10" y1="9" x2="8" y2="9"></line>
-                            </svg>
-                            <span>Adicionar Documento</span>
-                            <input type="file" class="file-input">
-                        </button>
-                    </div>
+                    <div class="media-preview"></div>
+                </div>
+                <div class="post-actions">
+                    <button class="action-btn">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        <span>Adicionar Foto</span>
+                    </button>
+                    <button class="action-btn">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <line x1="10" y1="9" x2="8" y2="9"></line>
+                        </svg>
+                        <span>Adicionar Documento</span>
+                    </button>
                 </div>
                 <div class="post-options">
                     <div class="option-group">
+                        <h4 class="option-group-title">Privacidade</h4>
                         <label class="option-label">
                             <input type="checkbox" class="option-input">
                             <span>Permitir comentários</span>
                         </label>
                         <label class="option-label">
                             <input type="checkbox" class="option-input">
-                            <span>Notificar amigos</span>
+                            <span>Permitir compartilhamento</span>
                         </label>
-                    </div>
-                    <div class="tags-input">
-                        <input type="text" class="tag-field" placeholder="Adicionar tags (separadas por vírgula)">
-                        <div class="tags-preview"></div>
                     </div>
                 </div>
             </div>
@@ -154,7 +155,7 @@
                 <line x1="8" y1="12" x2="16" y2="12"></line>
             </svg>
         </a>
-        <a href="./notificaçoes.html" class="nav-item">
+        <a href="./notificações.html" class="nav-item">
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
                 <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
@@ -173,6 +174,6 @@
             </svg>
         </a>
     </nav>
-    <script type="module" src="./login.js"></script>
+    <script type="module" src="./js/login.js"></script>
 </body>
 </html>

@@ -409,11 +409,18 @@
 .mobile-nav .nav-item {
     padding: 0.5rem;
     width: auto;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .mobile-nav .icon {
     width: 1.75rem;
     height: 1.75rem;
+}
+
+.mobile-nav .settings-btn {
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 @media (min-width: 1024px) {
