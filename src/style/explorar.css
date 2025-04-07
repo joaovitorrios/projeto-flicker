@@ -1,0 +1,151 @@
+.explore-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.search-bar {
+    margin-bottom: 2rem;
+}
+
+.search-input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #fc6008;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.trending-topics {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.trending-topics h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #fc6008;
+}
+
+.topic-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.topic-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.topic-item:hover {
+    background: rgba(252, 96, 8, 0.1);
+    transform: translateX(5px);
+}
+
+.topic-name {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.topic-posts {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.suggested-users {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.suggested-users h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #fc6008;
+}
+
+.user-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+}
+
+.user-item:hover {
+    background: rgba(252, 96, 8, 0.1);
+    transform: translateX(5px);
+}
+
+.user-avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid rgba(252, 96, 8, 0.2);
+}
+
+.user-info {
+    flex: 1;
+}
+
+.user-info h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.user-info span {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.follow-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background: #fc6008;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.follow-btn:hover {
+    background: #e55607;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+    .explore-container {
+        padding: 1rem;
+    }
+
+    .trending-topics,
+    .suggested-users {
+        border-radius: 0;
+    }
+}
