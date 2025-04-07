@@ -317,70 +317,89 @@ body {
 }
 
 .post {
-    background: rgba(40, 40, 40, 0.5);
-    border-radius: 12px;
-    padding: 16px;
-    margin-bottom: 16px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    background: var(--bg-card);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
     border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.post:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .post-header {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 16px;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
 }
 
 .post-avatar {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     object-fit: cover;
+    border: 2px solid var(--primary-color);
 }
 
 .post-info {
     flex: 1;
 }
 
-.post-name-container {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-.post-name-container h3 {
-    font-size: 16px;
+.post-author {
     font-weight: 600;
     color: var(--text-primary);
-    margin: 0;
+    font-size: 0.95rem;
 }
 
-.post-time {
-    font-size: 14px;
+.post-date {
     color: var(--text-secondary);
+    font-size: 0.85rem;
 }
 
 .post-content {
-    margin-bottom: 16px;
-}
-
-.post-content p {
-    font-size: 16px;
-    line-height: 1.5;
     color: var(--text-primary);
-    margin: 0 0 16px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+    max-height: 3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .post-image {
     width: 100%;
-    border-radius: 8px;
+    max-height: 300px;
     object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem;
+    display: none;
+}
+
+.post.expanded .post-content {
+    max-height: none;
+    -webkit-line-clamp: unset;
+}
+
+.post.expanded .post-image {
+    display: block;
 }
 
 .post-actions {
     display: flex;
-    gap: 24px;
+    gap: 1rem;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border-color);
 }
 
 .action-btn {
@@ -529,15 +548,15 @@ body {
         height: 32px;
     }
 
-    .post-name-container h3 {
+    .post-author {
         font-size: 14px;
     }
 
-    .post-time {
+    .post-date {
         font-size: 12px;
     }
 
-    .post-content p {
+    .post-content {
         font-size: 14px;
     }
 

@@ -288,5 +288,13 @@
         </a>
     </nav>
     <script type="module" src="./js/login.js"></script>
+    <script>
+        // Função para expandir/recolher posts
+        document.querySelectorAll('.post').forEach(post => {
+            post.addEventListener('click', function() {
+                this.classList.toggle('expanded');
+            });
+        });
+    </script>
 </body>
 </html>
