@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('form');
     const errorMessage = document.querySelector('.error-message');
+    const successMessage = document.querySelector('.success-message');
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -10,7 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const password = document.getElementById('password').value;
         const confirmPassword = document.getElementById('confirm-password').value;
 
-        // Validações básicas
+
+        errorMessage.style.display = 'none';
+        successMessage.style.display = 'none';
+
+        
         if (password !== confirmPassword) {
             errorMessage.textContent = 'As senhas não coincidem';
             errorMessage.style.display = 'block';
@@ -35,11 +40,20 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = await response.json();
 
             if (response.ok) {
-                // Cadastro bem sucedido
-                window.location.href = './login.html';
+        
+                successMessage.textContent = 'Cadastro realizado com sucesso! Redirecionando...';
+                successMessage.style.display = 'block';
+                
+        
+                form.reset();
+                
+                
+                setTimeout(() => {
+                    window.location.href = './login.html';
+                }, 2000);
             } else {
-                // Mostrar erro
-                errorMessage.textContent = data.error;
+                
+                errorMessage.textContent = data.error || 'Erro ao criar conta';
                 errorMessage.style.display = 'block';
             }
         } catch (error) {

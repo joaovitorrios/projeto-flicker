@@ -20,11 +20,18 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = await response.json();
 
             if (response.ok) {
-                // Login bem sucedido
+               
                 localStorage.setItem('currentUser', JSON.stringify(data));
-                window.location.href = './feed.html';
+                
+                if (data.profileConfigured === false) {
+                    
+                    window.location.href = './configurar-perfil.html';
+                } else {
+                  
+                    window.location.href = './feed.html';
+                }
             } else {
-                // Mostrar erro
+            
                 errorMessage.textContent = data.error;
                 errorMessage.style.display = 'block';
             }

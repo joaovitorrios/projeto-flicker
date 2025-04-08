@@ -5,7 +5,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const coverPreview = document.querySelector('.cover-preview');
     const avatarPreview = document.querySelector('.avatar-preview');
 
-    // Função para preview de imagem
+  
+    const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    if (!currentUser) {
+        window.location.href = './login.html';
+        return;
+    }
+
+
+    if (currentUser.name) document.getElementById('name').value = currentUser.name;
+    if (currentUser.username) document.getElementById('username').value = currentUser.username;
+    if (currentUser.location) document.getElementById('location').value = currentUser.location;
+    if (currentUser.website) document.getElementById('website').value = currentUser.website;
+    if (currentUser.linkedin) document.getElementById('linkedin').value = currentUser.linkedin;
+    if (currentUser.avatar) avatarPreview.src = currentUser.avatar;
+    if (currentUser.cover) coverPreview.src = currentUser.cover;
+
+
     function handleImageUpload(file, previewElement) {
         if (file) {
             const reader = new FileReader();
@@ -16,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Event listeners para upload de imagens
+
     coverUpload.addEventListener('change', (e) => {
         handleImageUpload(e.target.files[0], coverPreview);
     });
@@ -25,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         handleImageUpload(e.target.files[0], avatarPreview);
     });
 
-    // Manipulação do formulário
+  
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
@@ -36,25 +52,29 @@ document.addEventListener('DOMContentLoaded', () => {
             website: document.getElementById('website').value,
             linkedin: document.getElementById('linkedin').value,
             avatar: avatarPreview.src,
-            cover: coverPreview.src
+            cover: coverPreview.src,
+            profileConfigured: true
         };
 
         try {
-            // Aqui você pode adicionar a lógica para salvar os dados no servidor
-            // Por enquanto, vamos apenas salvar no localStorage
-            const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+  
             const updatedUser = { ...currentUser, ...formData };
             localStorage.setItem('currentUser', JSON.stringify(updatedUser));
 
-            // Redirecionar para o feed
-            window.location.href = './feed.html';
+        
+            window.location.href = './perfil.html';
         } catch (error) {
             console.error('Erro ao salvar perfil:', error);
         }
     });
 
-    // Botão de pular
+   
     document.querySelector('.skip-btn').addEventListener('click', () => {
+        
+        const updatedUser = { ...currentUser, profileConfigured: true };
+        localStorage.setItem('currentUser', JSON.stringify(updatedUser));
+        
+       
         window.location.href = './feed.html';
     });
 }); 

@@ -17,16 +17,21 @@
     <div class="container">
         <div class="login-card">
             <img src="https://i.ibb.co/VkYMZvM/imagem-2025-03-04-204306477-removebg.png" alt="Flicker Logo" class="logo">
-            <form class="login-form" action="/registrar" method="POST">
+            <form class="login-form">
                 <div class="input-group">
-                    <input type="text" placeholder="Nome completo" required id="nome" name="nome" />
+                    <input type="text" placeholder="Nome completo" required id="name" name="name" />
                 </div>
                 <div class="input-group">
                     <input type="email" placeholder="E-mail" required id="email" name="email" />
                 </div>
                 <div class="input-group">
-                    <input type="password" placeholder="Senha" required id="senha" name="senha" />
+                    <input type="password" placeholder="Senha" required id="password" name="password" />
                 </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Confirmar senha" required id="confirm-password" name="confirm-password" />
+                </div>
+                <div class="message error-message" style="display: none;"></div>
+                <div class="message success-message" style="display: none;"></div>
                 <button type="submit">Cadastrar</button>
             </form>
             <div class="divider">
@@ -35,6 +40,6 @@
             <a href="./login.html" class="forgot-password">Voltar para Login</a>
         </div>
     </div>
-    <script type="module" src="js/cadastro.js"></script>
+    <script src="js/cadastro.js"></script>
 </body>
 </html>
