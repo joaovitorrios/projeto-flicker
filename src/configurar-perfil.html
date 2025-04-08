@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurar Perfil - Flicker</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/configurar-perfil.css">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/sdSGPPYF/Design-sem-nome-1-removebg-preview.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="config-profile-container">
+        <div class="config-profile-header">
+            <h1>Configure seu Perfil</h1>
+            <p>Personalize seu perfil para começar a usar o Flicker</p>
+        </div>
+
+        <form class="config-profile-form">
+            <div class="profile-images">
+                <div class="cover-section">
+                    <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809" alt="Banner" class="cover-preview">
+                    <label for="cover-upload" class="upload-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        Escolher Banner
+                    </label>
+                    <input type="file" id="cover-upload" accept="image/*" hidden>
+                </div>
+
+                <div class="avatar-section">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=default" alt="Avatar" class="avatar-preview">
+                    <label for="avatar-upload" class="upload-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        Escolher Foto
+                    </label>
+                    <input type="file" id="avatar-upload" accept="image/*" hidden>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Nome Completo</label>
+                <input type="text" id="name" placeholder="Seu nome completo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Nome de Usuário</label>
+                <div class="username-input">
+                    <span class="at-symbol">@</span>
+                    <input type="text" id="username" placeholder="seu_usuario" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Localização</label>
+                <input type="text" id="location" placeholder="Sua cidade, país">
+            </div>
+
+            <div class="form-group">
+                <label for="website">Website</label>
+                <input type="url" id="website" placeholder="https://seu-site.com">
+            </div>
+
+            <div class="form-group">
+                <label for="linkedin">LinkedIn</label>
+                <input type="url" id="linkedin" placeholder="https://linkedin.com/in/seu-perfil">
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="save-btn">Salvar e Continuar</button>
+                <button type="button" class="skip-btn">Pular por enquanto</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./js/configurar-perfil.js"></script>
+</body>
+</html> 
