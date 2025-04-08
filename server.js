@@ -61,7 +61,7 @@ app.post('/api/register', async (req, res) => {
         users.push(newUser);
         saveUsers(users);
 
-        res.status(201).json({ message: 'Usuário criado com sucesso' });
+        res.status(201).json({ message: 'Usuário criado com sucesso, parabéns' });
     } catch (error) {
         res.status(500).json({ error: 'Erro ao criar usuário' });
     }
