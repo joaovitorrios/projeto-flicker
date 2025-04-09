@@ -86,26 +86,27 @@ document.addEventListener('DOMContentLoaded', () => {
             comments: 0,
             author: {
                 id: currentUser.id,
-                name: currentUser.name,
-                avatar: currentUser.avatar,
+                name: "João Vitor Rios",
+                avatar: "https://i.ibb.co/W4t0xxJX/IMG-4055.jpg",
                 verified: currentUser.verified || false
             }
         };
 
         try {
+            // Salvar o post no localStorage de posts
+            const posts = JSON.parse(localStorage.getItem('posts')) || [];
+            posts.unshift(post);
+            localStorage.setItem('posts', JSON.stringify(posts));
+
+            // Atualizar posts do usuário atual
             if (!currentUser.posts) {
                 currentUser.posts = [];
             }
             currentUser.posts.unshift(post);
             localStorage.setItem('currentUser', JSON.stringify(currentUser));
 
-            // Salvar o post também no localStorage de posts
-            const posts = JSON.parse(localStorage.getItem('posts')) || [];
-            posts.unshift(post);
-            localStorage.setItem('posts', JSON.stringify(posts));
-
             alert('Post publicado com sucesso!');
-            window.location.href = './perfil.html';
+            window.location.href = './feed.html';
         } catch (error) {
             console.error('Erro ao publicar post:', error);
             alert('Erro ao publicar post. Tente novamente.');
