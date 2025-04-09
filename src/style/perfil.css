@@ -143,6 +143,14 @@
     overflow: hidden;
     border-radius: 8px;
     margin-bottom: 2rem;
+    z-index: 1;
+}
+
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6));
+    z-index: 1;
 }
 
 .profile-banner img {
@@ -167,6 +175,7 @@
     position: relative;
     margin-top: -75px;
     background: var(--bg-dark);
+    z-index: 2;
 }
 
 .profile-avatar img {
@@ -567,4 +576,33 @@
     .posts-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+.edit-banner-btn {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    color: var(--text-primary);
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.edit-banner-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.edit-banner-btn svg {
+    width: 16px;
+    height: 16px;
 }

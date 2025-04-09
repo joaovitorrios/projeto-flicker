@@ -96,20 +96,23 @@ body {
     justify-content: space-around;
     align-items: center;
     z-index: 1000;
+    padding: 0 1rem;
 }
 
 .mobile-nav .nav-item {
     color: var(--text-secondary);
     text-decoration: none;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    gap: 0.25rem;
     padding: 0.5rem;
     border-radius: 8px;
     transition: all 0.3s ease;
     position: relative;
     z-index: 100;
     background: transparent;
+    width: 3.5rem;
 }
 
 .mobile-nav .nav-item:hover,
@@ -122,6 +125,10 @@ body {
     width: 24px;
     height: 24px;
     stroke: currentColor;
+}
+
+.mobile-nav .nav-item span {
+    font-size: 0.75rem;
 }
 
 /* Responsividade */
@@ -169,4 +176,10 @@ body {
     display: none;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding-bottom: 5rem;
+    }
 } 

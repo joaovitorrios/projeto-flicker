@@ -340,4 +340,8 @@
     .suggested-users {
         border-radius: 0;
     }
+
+    .main-content {
+        padding-bottom: 5rem;
+    }
 }

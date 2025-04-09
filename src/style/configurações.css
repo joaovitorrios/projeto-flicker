@@ -286,4 +286,8 @@
         opacity: 1;
         visibility: visible;
     }
+
+    .main-content {
+        padding-bottom: 5rem;
+    }
 }
