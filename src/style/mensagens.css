@@ -113,7 +113,7 @@
 
 .settings-btn {
     position: absolute;
-    bottom: 1rem;
+    bottom: 3.5rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -292,4 +292,6 @@
     margin: 0.5rem 0;
     position: relative;
     top: 0;
+    margin-top: auto;
+    margin-bottom: 1rem;
 }

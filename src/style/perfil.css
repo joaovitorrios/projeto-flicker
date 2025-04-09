@@ -552,36 +552,6 @@ body {
     right: 0;
     margin: 0 auto;
     width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 12px;
-    color: var(--text-secondary);
-    text-decoration: none;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    font-size: 1rem;
-    font-weight: 600;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.settings-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
-    color: var(--text-primary);
-}
-
-.settings-btn.active {
-    color: var(--text-primary);
-    font-weight: 700;
-    background: rgba(255, 255, 255, 0.1);
-}
-
-.settings-btn svg {
-    width: 24px;
-    height: 24px;
-    stroke: currentColor;
 }
 
 @media (min-width: 1024px) {
@@ -597,4 +567,14 @@ body {
     .main-content {
         margin-left: 280px;
     }
+}
+
+.new-post-btn {
+    background: transparent;
+    color: var(--text-secondary);
+    margin: 0.5rem 0;
+    position: relative;
+    top: 0;
+    margin-top: auto;
+    margin-bottom: 1rem;
 }
