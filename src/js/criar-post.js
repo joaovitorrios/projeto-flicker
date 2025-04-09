@@ -99,6 +99,11 @@ document.addEventListener('DOMContentLoaded', () => {
             currentUser.posts.unshift(post);
             localStorage.setItem('currentUser', JSON.stringify(currentUser));
 
+            // Salvar o post também no localStorage de posts
+            const posts = JSON.parse(localStorage.getItem('posts')) || [];
+            posts.unshift(post);
+            localStorage.setItem('posts', JSON.stringify(posts));
+
             alert('Post publicado com sucesso!');
             window.location.href = './perfil.html';
         } catch (error) {

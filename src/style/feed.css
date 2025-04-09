@@ -1,9 +1,19 @@
+:root {
+    --primary-color: #ff4500;
+    --primary-hover: #ff6347;
+    --bg-dark: #111;
+    --bg-card: rgba(0, 0, 0, 0.95);
+    --text-primary: #fbfbfb;
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
 .feed-page {
     display: flex;
     min-height: 100vh;
-    background: #111;
-    color: #fbfbfb;
-    font-family: 'Poppins', sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
     position: relative;
 }
 
@@ -13,9 +23,9 @@
     left: 0;
     right: 0;
     height: 4rem;
-    background: rgba(0, 0, 0, 0.95);
+    background: var(--bg-card);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid var(--border-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,9 +43,9 @@
     position: fixed;
     left: 0;
     top: 0;
-    background: rgba(0, 0, 0, 0.95);
+    background: var(--bg-card);
     backdrop-filter: blur(10px);
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid var(--border-color);
     padding: 2rem;
     display: none;
     z-index: 90;
@@ -64,7 +74,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .nav-item, .new-post-btn, .settings-btn {
@@ -103,7 +113,7 @@
 
 .settings-btn {
     position: absolute;
-    bottom: 3.5rem;
+    bottom: 1rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -113,8 +123,7 @@
 .main-content {
     flex: 1;
     margin-left: 0;
-    padding: 2rem;
-    margin-bottom: 4rem;
+    padding: 4rem 1rem 1rem;
     transition: margin-left 0.3s;
     position: relative;
     z-index: 1;
@@ -375,39 +384,45 @@
     left: 0;
     right: 0;
     height: 4rem;
-    background: rgba(0, 0, 0, 0.95);
+    background: var(--bg-card);
     backdrop-filter: blur(10px);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid var(--border-color);
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    padding: 0 1rem;
+    justify-content: space-around;
     z-index: 100;
 }
 
 .mobile-nav .nav-item {
-    padding: 0.5rem;
-    width: auto;
-    font-size: 1rem;
-    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    color: var(--text-secondary);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.2s ease;
 }
 
-.mobile-nav .icon {
-    width: 1.75rem;
-    height: 1.75rem;
+.mobile-nav .nav-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
 }
 
-.mobile-nav .settings-btn {
-    font-size: 1rem;
-    font-weight: 400;
+.mobile-nav .nav-item.active {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.mobile-nav .nav-item svg {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
 }
 
 @media (min-width: 1024px) {
-    .mobile-header,
-    .mobile-nav {
-        display: none;
-    }
-
     .sidebar {
         display: block;
     }
@@ -415,6 +430,11 @@
     .main-content {
         margin-left: 280px;
         padding-top: 2rem;
+    }
+
+    .mobile-header,
+    .mobile-nav {
+        display: none;
     }
 }
 
@@ -461,7 +481,9 @@
 .new-post-btn {
     background: transparent;
     color: var(--text-secondary);
-    margin: 1rem 0;
+    margin: 0.5rem 0;
+    position: relative;
+    top: 0;
 }
 
 .new-post-btn:hover {

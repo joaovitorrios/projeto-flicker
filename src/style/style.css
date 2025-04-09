@@ -1,3 +1,27 @@
+:root {
+    --primary-color: #ff4500;
+    --primary-hover: #ff6347;
+    --bg-dark: #111;
+    --bg-card: rgba(0, 0, 0, 0.95);
+    --text-primary: #fbfbfb;
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Reset e estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
 /* Estilos base para navegação */
 .nav-item, .new-post-btn, .settings-btn {
     display: flex;
@@ -56,4 +80,93 @@
     right: 0;
     margin: 0 auto;
     width: 100%;
+}
+
+/* Navegação móvel */
+.mobile-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    background: var(--bg-card);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+}
+
+.mobile-nav .nav-item {
+    color: var(--text-secondary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 100;
+    background: transparent;
+}
+
+.mobile-nav .nav-item:hover,
+.mobile-nav .nav-item.active {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.mobile-nav .nav-item svg {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+}
+
+/* Responsividade */
+@media (min-width: 1024px) {
+    .sidebar {
+        display: block;
+    }
+
+    .main-content {
+        margin-left: 280px;
+    }
+
+    .mobile-header,
+    .mobile-nav {
+        display: none;
+    }
+}
+
+/* Sidebar para desktop */
+@media (min-width: 768px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    .sidebar {
+        display: block;
+    }
+}
+
+/* Utilitários */
+.hidden {
+    display: none !important;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    display: none;
+    align-items: center;
+    justify-content: center;
 } 
