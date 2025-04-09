@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const userAvatar = document.querySelector('.user-avatar');
     const userName = document.querySelector('.user-details h3');
 
-    userAvatar.src = currentUser.avatar;
-    userName.textContent = currentUser.name;
+    userAvatar.src = "https://i.ibb.co/W4t0xxJX/IMG-4055.jpg";
+    userName.textContent = "João Vitor Rios";
 
     let selectedImage = null;
     let imagePreview = null;

@@ -263,29 +263,19 @@
     gap: 2rem;
 }
 
-.user-info {
+.post-header {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    padding: 1.5rem;
-    background: rgba(40, 40, 40, 0.5);
-    border-radius: 1rem;
-    border: 1px solid var(--border-color);
+    margin-bottom: 1.5rem;
 }
 
 .user-avatar {
-    width: 4rem;
-    height: 4rem;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
-    border: 3px solid rgba(255, 69, 0, 0.3);
     object-fit: cover;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s;
-}
-
-.user-avatar:hover {
-    transform: scale(1.05);
-    border-color: rgba(255, 69, 0, 0.6);
+    border: 3px solid var(--primary-color);
 }
 
 .user-details {
@@ -293,37 +283,29 @@
 }
 
 .user-details h3 {
-    margin-bottom: 0.5rem;
-    font-size: 1.4rem;
+    margin: 0;
+    font-size: 1.25rem;
     color: var(--text-primary);
     font-weight: 600;
 }
 
+.post-visibility {
+    margin-top: 0.5rem;
+}
+
 .visibility-select {
-    background: rgba(40, 40, 40, 0.7);
+    background: rgba(255, 255, 255, 0.1);
     border: 1px solid var(--border-color);
-    color: white;
-    padding: 0.85rem 1.2rem;
-    border-radius: 0.75rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: var(--text-primary);
+    font-size: 0.875rem;
     cursor: pointer;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 200px;
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 1rem center;
-    background-size: 1rem;
-    padding-right: 2.5rem;
 }
 
 .visibility-select:focus {
     outline: none;
     border-color: var(--primary-color);
-    background-color: rgba(50, 50, 50, 0.8);
-    box-shadow: 0 0 0 2px rgba(255, 69, 0, 0.2);
 }
 
 .post-editor {
