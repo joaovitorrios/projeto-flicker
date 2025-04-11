@@ -29,7 +29,7 @@ O **Flicker** é uma rede social completa, com interface moderna e interativa. O
 
 A tela inicial da aplicação, onde o usuário pode inserir seu e-mail e senha para acessar o sistema.
 
-> ![Login](coloque-o-link-da-imagem-aqui)
+> ![Login](https://i.ibb.co/4R49WnSF/Captura-de-tela-2025-04-11-104238.png)
 
 ---
 
@@ -37,7 +37,7 @@ A tela inicial da aplicação, onde o usuário pode inserir seu e-mail e senha p
 
 Permite que novos usuários criem uma conta inserindo nome, e-mail, senha e outros dados.
 
-> ![Cadastro](coloque-o-link-da-imagem-aqui)
+> ![Cadastro](https://i.ibb.co/qYJ5ZG1S/Captura-de-tela-2025-04-11-104245.png)
 
 ---
 
@@ -53,7 +53,7 @@ Página principal onde os usuários visualizam postagens de outras pessoas. Cada
 
 Permite pesquisar por outros usuários e conteúdos dentro da rede.
 
-> ![Pesquisa](coloque-o-link-da-imagem-aqui)
+> ![Explorar]([coloque-o-link-da-imagem-aqui](https://i.ibb.co/LhZpMwpL/Captura-de-tela-2025-04-11-103305.png))
 
 ---
 
@@ -61,7 +61,7 @@ Permite pesquisar por outros usuários e conteúdos dentro da rede.
 
 Central de alertas que mostra interações como curtidas, comentários ou novos seguidores.
 
-> ![Notificações](coloque-o-link-da-imagem-aqui)
+> ![Notificações]([coloque-o-link-da-imagem-aqui](https://i.ibb.co/23fgJkpS/Captura-de-tela-2025-04-11-103322.png))
 
 ---
 
@@ -69,7 +69,7 @@ Central de alertas que mostra interações como curtidas, comentários ou novos 
 
 Área para troca de mensagens privadas entre usuários.
 
-> ![Mensagens](coloque-o-link-da-imagem-aqui)
+> ![Mensagens]([coloque-o-link-da-imagem-aqui](https://i.ibb.co/67ngxvPN/Captura-de-tela-2025-04-11-103333.png))
 
 ---
 
@@ -77,7 +77,7 @@ Central de alertas que mostra interações como curtidas, comentários ou novos 
 
 Mostra as informações do usuário, suas postagens, seguidores e opções de edição do perfil.
 
-> ![Perfil](coloque-o-link-da-imagem-aqui)
+> ![Perfil]([coloque-o-link-da-imagem-aqui](https://i.ibb.co/MyMSH631/Captura-de-tela-2025-04-11-103352.png))
 
 ---
 
@@ -85,7 +85,7 @@ Mostra as informações do usuário, suas postagens, seguidores e opções de ed
 
 Interface para o usuário escrever e publicar uma nova postagem com texto e/ou imagem.
 
-> ![Criar Post](coloque-o-link-da-imagem-aqui)
+> ![Criar Post](https://i.ibb.co/5gV4DMVm/Captura-de-tela-2025-04-11-103407.png)
 
 ---
 
@@ -93,7 +93,7 @@ Interface para o usuário escrever e publicar uma nova postagem com texto e/ou i
 
 Tela com opções de personalização da conta, como alteração de senha, foto de perfil e preferências do sistema.
 
-> ![Configurações](coloque-o-link-da-imagem-aqui)
+> ![Configurações](https://i.ibb.co/pvVvV7WP/Captura-de-tela-2025-04-11-103416.png)
 
 ---
 
