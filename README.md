@@ -45,7 +45,7 @@ Permite que novos usuários criem uma conta inserindo nome, e-mail, senha e outr
 
 Página principal onde os usuários visualizam postagens de outras pessoas. Cada post mostra nome, conteúdo e data/hora.
 
-> ![Feed](coloque-o-link-da-imagem-aqui)
+> ![Feed]((https://i.ibb.co/TM5G092h/Design-sem-nome-1.png))
 
 ---
 
