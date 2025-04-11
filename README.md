@@ -53,7 +53,7 @@ Página principal onde os usuários visualizam postagens de outras pessoas. Cada
 
 Permite pesquisar por outros usuários e conteúdos dentro da rede.
 
-> ![Explorar]([coloque-o-link-da-imagem-aqui](https://i.ibb.co/LhZpMwpL/Captura-de-tela-2025-04-11-103305.png))
+> ![Explorar]((https://i.ibb.co/LhZpMwpL/Captura-de-tela-2025-04-11-103305.png))
 
 ---
 
@@ -61,7 +61,7 @@ Permite pesquisar por outros usuários e conteúdos dentro da rede.
 
 Central de alertas que mostra interações como curtidas, comentários ou novos seguidores.
 
-> ![Notificações]([coloque-o-link-da-imagem-aqui](https://i.ibb.co/23fgJkpS/Captura-de-tela-2025-04-11-103322.png))
+> ![Notificações]((https://i.ibb.co/23fgJkpS/Captura-de-tela-2025-04-11-103322.png))
 
 ---
 
@@ -69,7 +69,7 @@ Central de alertas que mostra interações como curtidas, comentários ou novos 
 
 Área para troca de mensagens privadas entre usuários.
 
-> ![Mensagens]([coloque-o-link-da-imagem-aqui](https://i.ibb.co/67ngxvPN/Captura-de-tela-2025-04-11-103333.png))
+> ![Mensagens]((https://i.ibb.co/67ngxvPN/Captura-de-tela-2025-04-11-103333.png))
 
 ---
 
@@ -77,7 +77,7 @@ Central de alertas que mostra interações como curtidas, comentários ou novos 
 
 Mostra as informações do usuário, suas postagens, seguidores e opções de edição do perfil.
 
-> ![Perfil]([coloque-o-link-da-imagem-aqui](https://i.ibb.co/MyMSH631/Captura-de-tela-2025-04-11-103352.png))
+> ![Perfil]((https://i.ibb.co/MyMSH631/Captura-de-tela-2025-04-11-103352.png))
 
 ---
 
