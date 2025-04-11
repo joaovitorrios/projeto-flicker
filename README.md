@@ -1,6 +1,6 @@
 # Flicker - Rede Social Acadêmica que Ganhou Vida Própria ✨
 
-Este repositório contém o projeto **Flicker**, uma rede social desenvolvida como trabalho acadêmico, mas que tomou forma e vem sendo expandida com funcionalidades reais, inspiradas em plataformas como o Twitter. 🚀
+Este repositório contém o projeto **Flicker**, uma rede social desenvolvida como trabalho acadêmico, mas que tomou forma e vem sendo expandida com funcionalidades reais, inspiradas em plataformas como o Instagram. 🚀
 
 Desenvolvido por:
 - João Vitor Rios
