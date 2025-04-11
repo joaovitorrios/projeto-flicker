@@ -37,7 +37,7 @@ A tela inicial da aplicação, onde o usuário pode inserir seu e-mail e senha p
 
 Permite que novos usuários criem uma conta inserindo nome, e-mail, senha e outros dados.
 
-> ![Cadastro](https://i.ibb.co/qYJ5ZG1S/Captura-de-tela-2025-04-11-104245.png)
+> ![Cadastro](https://i.ibb.co/gZ4Vn1g2/Captura-de-tela-2025-04-11-104245.png)
 
 ---
 
